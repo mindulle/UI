@@ -1,0 +1,46 @@
+{
+  "name": "@mindulle-ui/core",
+  "version": "0.0.1",
+  "status": "beta",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Contains all Mindulle design system packages.",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "vite build -c ../../vite.config.ts && tsc --project tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "lint": "eslint '**/*.{ts,tsx,js}'",
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "@mindulle-ui/button": "workspace:~",
+    "@mindulle-ui/date-picker": "workspace:~",
+    "@mindulle-ui/header": "workspace:~"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

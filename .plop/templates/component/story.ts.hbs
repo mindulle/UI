@@ -1,0 +1,23 @@
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { {{pascalCase name}} } from '../src';
+
+// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
+const meta = {
+  title: '{{pascalCase type}}/{{pascalCase name}}',
+  component: {{pascalCase name}},
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} satisfies Meta<typeof {{pascalCase name}}>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+export const Example: Story = {
+  args: {
+    children: 'A lovely {{pascalCase name}} component.',
+    // arguments for your story
+  },
+};
