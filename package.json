@@ -12,7 +12,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "ci:version": "pnpm changeset version",
-    "ci:publish": "pnpm publish -r --no-git-checks"
+    "ci:publish": "pnpm publish -r --access restricted --no-git-checks"
   },
   "keywords": [],
   "author": "",
