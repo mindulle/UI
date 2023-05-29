@@ -1,11 +1,11 @@
 {
-  "name": "@mindulle-ui/core",
-  "version": "1.0.0",
-  "status": "beta",
+  "name": "@mindulle-ui/nav",
+  "version": "0.0.1",
+  "status": "alpha",
   "publishConfig": {
     "access": "public"
   },
-  "description": "Contains all Mindulle design system packages.",
+  "description": "This is a Nav component",
   "files": [
     "dist"
   ],
@@ -21,20 +21,18 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.js"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./style.css": "./dist/style.css"
   },
   "source": "src/index.ts",
   "scripts": {
     "build": "vite build -c ../../vite.config.ts && tsc --project tsconfig.build.json",
     "clean": "rm -rf dist",
-    "lint": "eslint '**/*.{ts,tsx,js}'",
-    "test": "exit 0"
+    "lint": "eslint '**/*.{ts,tsx,js}' && stylelint '**/*.css' --ignore-path ../../.stylelintignore",
+    "test": "vitest run --coverage"
   },
   "dependencies": {
-    "@mindulle-ui/button": "workspace:~",
-    "@mindulle-ui/date-picker": "workspace:~",
-    "@mindulle-ui/header": "workspace:~",
-    "@mindulle-ui/nav": "workspace:~"
+    "classix": "2.1.17"
   },
   "peerDependencies": {
     "react": "18.2.0",
