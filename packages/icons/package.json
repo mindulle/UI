@@ -1,0 +1,48 @@
+{
+  "name": "@mindulle-ui/icons",
+  "version": "0.0.1",
+  "status": "alpha",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Elements that supplements content and represents an action or feature",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json",
+    "./style.css": "./dist/style.css"
+  },
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "pnpm build:icons && vite build -c ../../vite.config.ts && tsc --project tsconfig.build.json",
+    "build:icons": "svgr --silent -- icons",
+    "clean": "rm -rf dist",
+    "lint": "eslint '**/*.{ts,tsx,js}' && stylelint '**/*.css' --ignore-path ../../.stylelintignore",
+    "test": "pnpm build:icons && vitest run --coverage"
+  },
+  "dependencies": {
+    "@mindulle-ui/tokens": "workspace:~",
+    "classix": "2.1.17"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^6.5.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
