@@ -41,8 +41,8 @@ export default function (plop) {
       },
       {
         type: 'add',
-        path: 'packages/{{dashCase name}}/stories/{{pascalCase name}}.stories.ts',
-        templateFile: '.plop/templates/component/story.ts.hbs',
+        path: 'packages/{{dashCase name}}/stories/{{pascalCase name}}.stories.tsx',
+        templateFile: '.plop/templates/component/story.tsx.hbs',
       },
       {
         type: 'add',
