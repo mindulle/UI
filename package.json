@@ -6,6 +6,7 @@
   ],
   "description": "",
   "main": "index.js",
+  "source": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "plop",
@@ -18,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "type": "module",
+  "module": "esnext",
   "dependencies": {
     "plop": "^3.1.2",
     "typescript": "^5.0.4"
@@ -31,6 +33,8 @@
     "@storybook/react": "^7.0.18",
     "@storybook/react-vite": "^7.0.18",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/node": "^20.2.5",
+    "@types/react": "^18.2.7",
     "classix": "^2.1.32",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

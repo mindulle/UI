@@ -1,14 +1,15 @@
 {
-  "name": "@mindulle-ui/core",
+  "name": "@mindulle-ui/tokens",
   "version": "0.0.1",
   "status": "alpha",
   "publishConfig": {
     "access": "public"
   },
-  "description": "Contains all Mindulle design system packages.",
+  "description": "Mindulle design tokens delivered as CSS custom properties, CommonJS modules, and ES modules.",
   "files": [
     "dist"
   ],
+  "style": "dist/index.css",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -21,24 +22,19 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.js"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./themes.css": "./dist/themes.css",
+    "./index.css": "./dist/index.css",
+    "./media-queries.css": "./dist/media-queries.css"
   },
-  "source": "src/index.ts",
   "scripts": {
-    "build": "vite build -c ../../vite.config.ts && tsc --project tsconfig.build.json",
+    "build": "style-dictionary build --config ./sd.config.js",
     "clean": "rm -rf dist",
     "lint": "eslint '**/*.{ts,tsx,js}'",
     "test": "exit 0"
   },
-  "dependencies": {
-    "@mindulle-ui/button": "workspace:~"
-  },
-  "peerDependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
   "devDependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "style-dictionary": "^3.8.0",
+    "yaml": "^2.2.1"
   }
 }

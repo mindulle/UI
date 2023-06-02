@@ -1,0 +1,161 @@
+color:
+  bg:
+    feedback:
+      error:
+        value: hsla(0, 79%, 57.1%, 0.15)
+      info:
+        value: hsla(231.5, 100%, 62.5%, 0.15)
+      success:
+        value: hsla(153.9, 100%, 42.7%, 0.15)
+      warning:
+        value: hsla(45.2, 83.7%, 59.2%, 0.15)
+    interactive:
+      primary:
+        ' ':
+          value: '{ color.blue.light.value }'
+        active:
+          value: '{ color.blue.dark.value }'
+        focus:
+          value: '{ color.blue.dark.value }'
+        hover:
+          value: '{ color.blue.medium.value }'
+      destructive:
+        ' ':
+          value: '{ color.white. .value }'
+        active:
+          value: '{ color.system.red.medium.value }'
+        focus:
+          value: '{ color.system.red.medium.value }'
+        hover:
+          value: '{ color.system.red.light.value }'
+      disabled:
+        value: '{ color.gray.light.value }'
+    ui:
+      primary:
+        value: '{ color.white. .value }'
+    overlay:
+      primary:
+        value: '{ color.white. .value }'
+    field:
+      ' ':
+        value: '{ color.white. .value }'
+      disabled:
+        value: '{ color.gray.light.value }'
+      aside:
+        value: '{ color.gray.light.value }'
+
+  border:
+    feedback:
+      error:
+        value: '{ color.system.red.dark.value }'
+      info:
+        value: '{ color.blue.dark.value }'
+      success:
+        value: '{ color.system.green.dark.value }'
+      warning:
+        value: '{ color.system.yellow.dark.value }'
+    field:
+      ' ':
+        value: '{ color.gray.light.value }'
+      active:
+        value: '{ color.blue.medium.value }'
+      focus:
+        value: '{ color.blue.medium.value }'
+      error:
+        value: '{ color.system.red.dark.value }'
+      disabled:
+        value: '{ color.gray.dark.value }'
+    interactive:
+      focus:
+        value: '{ color.blue.medium.value }'
+      primary:
+        ' ':
+          value: '{ color.blue.medium.value }'
+        active:
+          value: '{ color.blue.dark.value }'
+        focus:
+          value: '{ color.blue.dark.value }'
+        hover:
+          value: '{ color.blue.medium.value }'
+      destructive:
+        value: '{ color.system.red.dark.value }'
+      disabled:
+        value: '{ color.gray.light.value }'
+    ui:
+      primary:
+        value: '{ color.gray.light.value }'
+
+  fill:
+    feedback:
+      error:
+        value: '{ color.system.red.dark.value }'
+      info:
+        value: '{ color.blue.dark.value }'
+      success:
+        value: '{ color.system.green.dark.value }'
+      warning:
+        value: '{ color.system.yellow.dark.value }'
+    interactive:
+      primary:
+        value: '{ color.white. .value }'
+      destructive:
+        value: '{ color.system.red.dark.value }'
+      disabled:
+        value: '{ color.gray.dark.value }'
+    ui:
+      primary:
+        value: currentvalue
+    field:
+      ' ':
+        value: '{ color.gray.medium.value }'
+
+  shadow:
+    interactive:
+      focus:
+        value: '{ color.blue.medium.value }'
+      primary:
+        value: '{ color.white. .value }'
+    ui:
+      primary:
+        value: '{ color.gray.medium.value }'
+
+  text:
+    feedback:
+      ' ':
+        value: '{ color.black.light.value }'
+      error:
+        value: '{ color.system.red.medium.value }'
+      success:
+        value: '{ color.system.green.dark.value }'
+      warning:
+        value: '{ color.system.yellow.dark.value }'
+      info:
+        value: '{ color.blue.dark.value }'
+    interactive:
+      # links
+      ' ':
+        value: '{ color.blue.medium.value }'
+      active:
+        value: '{ color.purple.medium.value }'
+      primary:
+        value: '{ color.white. .value }'
+      destructive:
+        value: '{ color.system.red.dark.value }'
+      disabled:
+        value: '{ color.gray.medium.value }'
+    ui:
+      primary:
+        ' ':
+          value: '{ color.black.light.value }'
+        inverted:
+          value: '{ color.white. .value }'
+    overlay:
+      primary:
+        value: '{ color.gray.dark.value }'
+    field:
+      ' ':
+        value: '{ color.gray.medium.value }'
+      disabled:
+        value: '{ color.gray.dark.value }'
+      placeholder:
+        value: '{ color.gray.medium.value }'

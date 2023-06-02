@@ -1,0 +1,13 @@
+border:
+  radius:
+    regular:
+      value: 0.3rem
+    medium:
+      value: 0.6rem
+  width:
+    100:
+      value: 0rem
+    200:
+      value: 0.1rem
+    300:
+      value: 0.2rem

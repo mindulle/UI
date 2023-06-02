@@ -1,0 +1,69 @@
+color:
+  blue:
+    dark:
+      value: hsl(209, 55%, 51%)
+    medium:
+      value: hsl(209, 62%, 85%)
+    light:
+      value: hsl(208, 70%, 95%)
+  cyan:
+    dark:
+      value: hsl(177, 100%, 41%) 
+    medium:
+      value: hsl(177, 51%, 72%)
+    light:
+      value: hsl(176, 100%, 93%)
+  purple:
+    dark:
+      value: hsl(267, 48%, 51%)
+    medium:
+      value: hsl(267, 49%, 85%)
+    light:
+      value: hsl(266, 88%, 97%)
+  yellow:
+    dark:
+      value: hsl(54, 82%, 57%)
+    medium:
+      value: hsl(53, 59%, 80%)
+    light:
+      value: hsl(55, 56%, 92%)
+  white:
+    ' ':
+      value: hsl(0, 0%, 100%)
+  gray:
+    medium:
+      value: hsl(220, 6%, 48%)
+    light:
+      value: hsl(219, 17%, 77%)
+  black:
+    ' ':
+      value: hsl(0, 0%, 0%)
+  system:
+    green:
+      dark:
+        value: hsl(126, 39%, 52%)
+      medium:
+        value: hsl(126, 38%, 85%)
+      light:
+        value: hsl(127, 69%, 95%)
+    red:
+      dark:
+        value: hsl(0, 69%, 54%)
+      medium:
+        value: hsl(0, 85%, 85%)
+      light:
+        value: hsl(0, 100%, 96%)
+    orange:
+      dark:
+        value: hsl(25, 97%, 63%)
+      medium:
+        value: hsl(25, 97%, 89%)
+      light:
+        value: hsl(25, 100%, 95%)
+    yellow:
+      dark:
+        value: hsl(54, 82%, 57%)
+      medium:
+        value: hsl(53, 59%, 80%)
+      light:
+        value: hsl(55, 56%, 92%)
