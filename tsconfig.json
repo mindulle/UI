@@ -2,12 +2,9 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "paths": {
-      "@mindulle-ui/button": ["./packages/button/src"],
-      "@mindulle-ui/date-picker": ["./packages/date-picker/src"],
-      "@mindulle-ui/header": ["./packages/header/src"],
-      "@mindulle-ui/nav": ["./packages/nav/src"],
-      // "@launchpad-ui/alert": ["./packages/alert/src"]
+      "@mindulle-ui/button": ["./packages/button/src"]
     }
   }
 }
