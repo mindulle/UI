@@ -1,11 +1,11 @@
 {
   "name": "@mindulle-ui/button",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "status": "alpha",
   "publishConfig": {
     "access": "public"
   },
-  "description": "Short description",
+  "description": "My dorable button component~",
   "files": [
     "dist"
   ],
