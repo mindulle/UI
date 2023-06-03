@@ -6,7 +6,8 @@ on:
   push:
     branches:
       - main
-
+env:
+  PNPM_CACHE_FOLDER: .pnpm-store
 # List of jobs
 jobs:
   chromatic-deployment:
@@ -24,6 +25,8 @@ jobs:
           node-version: lts/*
       - name: install pnpm
         run: npm i pnpm@latest -g
+      - name: setup pnpm config
+        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
       - name: Install dependencies
         # 👇 Install dependencies with the same package manager used in the project (replace it as needed), e.g. yarn, npm, pnpm
         run: pnpm install --no-frozen-lockfile
@@ -34,3 +37,5 @@ jobs:
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+      - name: remove cache
+        run: rm -rf $PNPM_CACHE_FOLDER
