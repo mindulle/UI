@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
-
+import path from 'path';
 import tsconfig from './tsconfig.json';
 import { cssImport } from './vite-plugin-css'
 const paths = tsconfig.compilerOptions.paths;
 
-import packageJSON from './package.json';
+const packageJSON = require(path.resolve('./package.json'));
+
 
 export default defineConfig({
   plugins: [cssImport()],
