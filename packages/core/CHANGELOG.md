@@ -1,5 +1,13 @@
 # @mindulle-ui/core
 
+## 0.0.2
+
+### Patch Changes
+
+- 10a0e063: Initialize basic components packages
+- Updated dependencies [10a0e063]
+  - @mindulle-ui/button@0.0.2
+
 ## 1.0.0
 
 ### Major Changes
