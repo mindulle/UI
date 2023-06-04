@@ -29,7 +29,7 @@ jobs:
           NODE_OPTIONS: '--max_old_space_size=4096'
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          buildScriptName: 'storybook:build'
+          buildScriptName: 'build-storybook'
           exitOnceUploaded: true
           onlyChanged: true
           externals: packages/(icons/icons|tokens/src)/**
