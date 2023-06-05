@@ -1,6 +1,6 @@
 {
   "name": "@mindulle-ui/icons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "status": "alpha",
   "publishConfig": {
     "access": "public"
