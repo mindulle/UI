@@ -11,7 +11,7 @@ import { Slot } from '@radix-ui/react-slot';
 import { cx } from 'classix';
 import { isValidElement, cloneElement, forwardRef, memo } from 'react';
 
-import './styles/Button.css';
+import './styles/Button.module.css';
 
 type IconButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   kind?: 'default' | 'primary' | 'destructive' | 'minimal' | 'close';

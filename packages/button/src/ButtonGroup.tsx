@@ -2,7 +2,7 @@ import type { ComponentProps } from 'react';
 
 import { cx } from 'classix';
 
-import './styles/ButtonGroup.css';
+import './styles/ButtonGroup.module.css';
 
 type ButtonGroupProps = ComponentProps<'div'> & {
   spacing?: 'compact' | 'normal' | 'large';
