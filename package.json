@@ -19,8 +19,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "module": "esnext",
   "dependencies": {
     "chromatic": "^6.18.0",
     "plop": "^3.1.2",
